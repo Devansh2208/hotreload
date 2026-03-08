@@ -14,7 +14,7 @@ install:
 	@go mod download
 	@go get github.com/fsnotify/fsnotify
 
-# Run tests
+# Run tests for hotreload
 test:
 	@echo "Running tests..."
 	@go test -v ./...
