@@ -1,0 +1,15 @@
+root: ./testserver
+build: go build -o ./server ./testserver
+exec: ./server
+debounce: 400ms
+summary_interval: 15s
+shutdown_timeout: 2s
+extensions:
+  - .go
+  - .yaml
+  - .yml
+ignore_dirs:
+  - .git
+  - bin
+  - dist
+ui: true
