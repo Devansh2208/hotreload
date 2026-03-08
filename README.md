@@ -45,7 +45,7 @@ hotreload/
 # Clone and navigate to the project
 cd hotreload
 
-# Install dependencies
+# Install dependencies for the project
 go mod download
 go get github.com/fsnotify/fsnotify
 
