@@ -53,7 +53,7 @@ func (b *Builder) Build(ctx context.Context, buildCmd string, workDir string) *B
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
 
-	// Configure process execution to support cross-platform cancellation/cleanup.
+	// Configure the process execution to support cross-platform cancellation/cleanup.
 	proc.ConfigureForGroup(cmd)
 
 	startTime := time.Now()
